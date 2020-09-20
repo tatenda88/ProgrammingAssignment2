@@ -30,8 +30,8 @@ cacheSolve <- function(x, ...) ##getting cache data
               message("getting cached data")
              return(inv)
            }
-        mat <- x$get()
-        inv<-solve(mat, ...) ##calculating the inverse
+        tat <- x$get()
+        inv<-solve(tat, ...) ##calculating the inverse
         x$setInverse(inv)
         inv ## Inverse of X matrix is returned 
 }
